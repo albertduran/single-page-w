@@ -1,1 +1,103 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto&Eva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #6cc5c9
+        }
+
+        .fons {
+            background: #6cc5c9 url("fondo.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .btn {
+            background-color: #ffe25b;
+            color: #3e5455;
+            text-align: center;
+            border-radius: 25px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            text-decoration: none;
+
+            border-color: #dbdbdb;
+            border-width: 1px;
+
+            cursor: pointer;
+            justify-content: center;
+            padding-bottom: 1em;
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-top: 1em;
+            text-align: center;
+            white-space: nowrap;
+            border-radius: 9999px;
+
+
+        }
+
+        .btn:hover {
+            background-color: #ffed98;
+        }
+
+        .botones {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+
+        @media screen and (max-width: 414px) {
+            .botones {
+                display: flex;
+                flex-direction: column;
+                margin-top: 15px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .botones a {
+                margin-top: 30px;
+                max-width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fons">
+        <div><img src="imagen.png" alt="Foto Boda" class="animate__bounceIn" />
+            <br>
+            <div class="botones">
+                <a href="https://surveyheart.com/form/61647786551d324c29c33342#welcome" class="btn animate__bounceIn">Confirmar asistencia</a>
+                <a href="https://goo.gl/maps/Hz9NUthnQwr2YyDY9" class="btn animate__bounceIn">¿Cómo llegar?</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
