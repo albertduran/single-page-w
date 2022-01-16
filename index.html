@@ -10,12 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
         html,
         body {
             padding: 0;
             margin: 0;
-            background-color: #6cc5c9
+            background-color: #6cc5c9;
         }
 
         .fons {
@@ -26,7 +29,7 @@
             width: 100%;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 95vh;
             padding: 0;
         }
 
@@ -39,7 +42,7 @@
             color: #3e5455;
             text-align: center;
             border-radius: 25px;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Lobster', sans-serif;
             font-size: 20px;
             text-decoration: none;
 
@@ -55,12 +58,25 @@
             text-align: center;
             white-space: nowrap;
             border-radius: 9999px;
-
-
         }
 
         .btn:hover {
             background-color: #ffed98;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', sans-serif;
+        }
+
+        .texts {
+            color: #fff;
+            font-family: 'Playfair Display', sans-serif;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            line-height: 2.1em;
+            text-align: justify;
         }
 
         .botones {
@@ -70,6 +86,37 @@
             margin-top: 15px;
         }
 
+        .connector {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .light {
+            border-color: #3e5455;
+            width: 30%;
+        }
+
+        .save, .date {
+            color: #3e5455;
+            font-size: 12px;
+            padding: 7px;
+        }
+
+        .rings {
+            color: #3e5455;
+            width: 25px;
+            margin: 0px 10px 0px 10px;
+        }
+
+        .nota {
+            color: #fff;
+            font-family: 'Playfair Display', sans-serif;
+        }
+
+        .capital {
+            font-size: 20px;
+        }
         @media screen and (max-width: 414px) {
             .botones {
                 display: flex;
@@ -97,7 +144,50 @@
             </div>
         </div>
     </div>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto my-4 text-center">
+                <h2 class="section-heading text-white">Si has llegado hasta aquí... ¡Enhorabuena! has sido invitada o invitado a nuestra boda... y lo más importante: ¡quieres venir!</h2>
+                <div class="connector my-4">
+                    <hr class="light">
+                    <div class="save">SAVE THE DATE</div>
+                    <div class="rings">
+                        <svg preserveAspectRatio="xMidYMid meet" data-bbox="-81.5 134 163 131" xmlns="http://www.w3.org/2000/svg" viewBox="-81.5 134 163 131" role="presentation" aria-hidden="true">
+                            <g>
+                                <path d="M40 165.4l16.8-17.6-9.6-13.8-27.1.2-11.4 13.9L25.4 165c-8.5 1-16.3 4.1-22.9 8.8 2.4 2 4.6 4.2 6.7 6.8 6.4-4.1 13.9-6.6 22.1-6.6 22.5 0 40.8 18.3 40.8 40.8s-18.3 40.8-40.8 40.8-40.8-18.3-40.8-40.8c0-8.7 2.8-16.8 7.4-23.4-1.9-2.6-4.2-4.8-6.7-6.7-6.3 8.4-10.1 18.8-10.1 30.1 0 27.7 22.5 50.2 50.2 50.2s50.2-22.5 50.2-50.2c0-24.7-18-45.3-41.5-49.4zm-15.5-15.7l5.3 14.3-14.2-14.3h8.9zm25.3 0l-13.2 13.8 5.1-13.8h8.1zm-12.1 0l-4.6 12.4-4.6-12.4h9.2zm-9.6-3.8l1.9-8h6.4l1.8 8.1H28.1zm22.8 0h-8.8l-1.8-8.1h4.9l5.7 8.1zm-29-8h4.3l-1.9 8h-8.9l6.5-8z"></path>
+                                <path d="M-9 249c-.2-.3-.4.1-2.2 1.2-5.8 3.3-12.8 5.4-20.2 5.4-22.5 0-40.8-18.3-40.8-40.8S-53.8 174-31.3 174s40.8 18.3 40.8 40.8c0 8.7-2.8 16.9-7.5 23.5l-.1.1c2.5 3.5 6.9 6.5 7 6.4 6.3-8.4 10-18.8 10-30 0-25.7-19.4-46.9-44.2-49.8L-9 147.8l-9.7-13.8-27.1.2-11.3 13.9 17.1 17.3c-23.5 4.1-41.5 24.7-41.5 49.4 0 27.7 22.5 50.2 50.2 50.2 7.1 0 14.2-1.5 20.7-4.5 1.7-.8 3.3-1.7 4.9-2.6 2.6-1.5 3.2-2.3 3-2.3-2.3-1.8-4.4-4.2-6.3-6.6zm-32.3-99.3L-36 164l-14.2-14.3h8.9zm25.3 0l-13.2 13.8 5.1-13.8h8.1zm-12.1 0l-4.6 12.4-4.6-12.4h9.2zm-9.6-3.8l1.9-8h6.4l1.8 8.1h-10.1zm22.8 0h-8.8l-1.8-8.1h4.9l5.7 8.1zm-29.1-8h4.3l-1.9 8h-8.9l6.5-8z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="date">3 SEPTIEMBRE 2022</div>
+                    <hr class="light">
+                </div>
+                <p class="texts">
+                    Gracias por querer compartir este momento con nosotros y cómo queremos corresponderte como mereces aquí arriba tienes 2 
+                    enlaces para o bien confirmar tu asistencia o bien para saber cómo llegar al lugar de la boda. El resto de cosas importantes
+                    día, hora, lugar... las tienes en la invitación que has recibido impresa.
+                </p>
+                <div class="connector my-4">
+                    <hr class="light">
+                    <div class="save">SAVE THE DATE</div>
+                    <div class="rings">
+                        <svg preserveAspectRatio="xMidYMid meet" data-bbox="-81.5 134 163 131" xmlns="http://www.w3.org/2000/svg" viewBox="-81.5 134 163 131" role="presentation" aria-hidden="true">
+                            <g>
+                                <path d="M40 165.4l16.8-17.6-9.6-13.8-27.1.2-11.4 13.9L25.4 165c-8.5 1-16.3 4.1-22.9 8.8 2.4 2 4.6 4.2 6.7 6.8 6.4-4.1 13.9-6.6 22.1-6.6 22.5 0 40.8 18.3 40.8 40.8s-18.3 40.8-40.8 40.8-40.8-18.3-40.8-40.8c0-8.7 2.8-16.8 7.4-23.4-1.9-2.6-4.2-4.8-6.7-6.7-6.3 8.4-10.1 18.8-10.1 30.1 0 27.7 22.5 50.2 50.2 50.2s50.2-22.5 50.2-50.2c0-24.7-18-45.3-41.5-49.4zm-15.5-15.7l5.3 14.3-14.2-14.3h8.9zm25.3 0l-13.2 13.8 5.1-13.8h8.1zm-12.1 0l-4.6 12.4-4.6-12.4h9.2zm-9.6-3.8l1.9-8h6.4l1.8 8.1H28.1zm22.8 0h-8.8l-1.8-8.1h4.9l5.7 8.1zm-29-8h4.3l-1.9 8h-8.9l6.5-8z"></path>
+                                <path d="M-9 249c-.2-.3-.4.1-2.2 1.2-5.8 3.3-12.8 5.4-20.2 5.4-22.5 0-40.8-18.3-40.8-40.8S-53.8 174-31.3 174s40.8 18.3 40.8 40.8c0 8.7-2.8 16.9-7.5 23.5l-.1.1c2.5 3.5 6.9 6.5 7 6.4 6.3-8.4 10-18.8 10-30 0-25.7-19.4-46.9-44.2-49.8L-9 147.8l-9.7-13.8-27.1.2-11.3 13.9 17.1 17.3c-23.5 4.1-41.5 24.7-41.5 49.4 0 27.7 22.5 50.2 50.2 50.2 7.1 0 14.2-1.5 20.7-4.5 1.7-.8 3.3-1.7 4.9-2.6 2.6-1.5 3.2-2.3 3-2.3-2.3-1.8-4.4-4.2-6.3-6.6zm-32.3-99.3L-36 164l-14.2-14.3h8.9zm25.3 0l-13.2 13.8 5.1-13.8h8.1zm-12.1 0l-4.6 12.4-4.6-12.4h9.2zm-9.6-3.8l1.9-8h6.4l1.8 8.1h-10.1zm22.8 0h-8.8l-1.8-8.1h4.9l5.7 8.1zm-29.1-8h4.3l-1.9 8h-8.9l6.5-8z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="date">3 SEPTIEMBRE 2022</div>
+                    <hr class="light">
+                </div>
+                <div class="nota">
+                    <p class="text-faded mb-1 text-center"><span class="capital">IMPORTANTE:</span> No hay código de vestimenta.</p>
+                    <p class="text-faded mb-4 text-center"><span class="capital">MÁS IMPORTANTE:</span> Necesitamos confirmación antes del día 15 de junio de 2022!</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
